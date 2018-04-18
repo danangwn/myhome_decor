@@ -1,0 +1,36 @@
+div.mystar {
+  margin: left;
+  width: 40%;
+  padding-bottom: auto;
+}
+
+input.mystar { display: none; }
+
+label.mystar {
+  float: right;
+  align-items: center;
+  padding: 3px;
+  font-size: 57px;
+  color: teal;
+  transition: all .2s;
+}
+
+input.mystar:checked ~ label.mystar:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+input.mystar-5:checked ~ label.mystar:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.mystar-1:checked ~ label.mystar:before { color: #F62; }
+
+label.mystar:hover { transform: rotate(-15deg) scale(1.3); }
+
+label.mystar:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
